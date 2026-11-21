@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luciana Rios Cruz | Engineering Portfolio</title>
+<meta name="description" content="Engineering portfolio of Luciana Rios Cruz: robotics, automation, control systems and machine vision.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #10151d;
+    --panel: #192230;
+    --text: #edf2fa;
+    --muted: #b3bfd0;
+    --accent: #91baff;
+    --border: #344154;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+  }
+  a { color: var(--accent); text-underline-offset: 4px; }
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 5px;
+  }
+  .wrap { max-width: 1100px; margin: auto; padding: 0 24px; }
+  nav {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  nav a { text-decoration: none; }
+  .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  header { padding: 90px 0 65px; }
+  .eyebrow {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 7vw, 4.8rem);
+    line-height: 1.1;
+    margin: 20px 0;
+    letter-spacing: -2px;
+  }
+  h2 { font-size: 2rem; line-height: 1.25; }
+  h3 { font-size: 1.3rem; line-height: 1.4; margin-top: 0; }
+  p { max-width: 760px; }
+  .intro { font-size: 1.2rem; color: var(--muted); }
+  .availability {
+    display: inline-block;
+    border-left: 3px solid var(--accent);
+    padding: 10px 18px;
+    margin: 20px 0;
+    background: var(--panel);
+  }
+  .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+  .button {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .button.primary { background: var(--accent); color: #10151d; }
+  section { padding: 38px 0; scroll-margin-top: 24px; }
+  .section-intro { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  article {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    scroll-margin-top: 24px;
+  }
+  article p { color: var(--muted); }
+  article strong { color: var(--text); }
+  .label { color: var(--accent); font-size: .8rem; margin-bottom: 12px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+  .tags span {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: .8rem;
+    color: var(--muted);
+  }
+  .education { border-left: 2px solid var(--accent); padding-left: 20px; }
+  footer {
+    padding: 30px 0;
+    margin-top: 35px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    header { padding-top: 55px; }
+    article { padding: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="wrap">
+    <a href="#">Luciana Rios Cruz</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <div class="eyebrow">Engineering Portfolio · Zittau, Germany</div>
+  <h1>Luciana<br>Rios Cruz</h1>
+  <p class="intro">
+    Mechatronics &amp; Electrical Engineering double-degree student.
+    Exploring robotics, automation, control systems and machine vision
+    through university projects.
+  </p>
+  <div class="availability">
+    Seeking a six-month mandatory internship in Germany
+    from March 2027 · Open to relocation
+  </div>
+  <div class="buttons">
+    <a class="button primary" href="#projects">Explore my projects</a>
+    <a class="button" href="mailto:a01236500@tec.mx">Get in touch</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="about">
+  <div class="eyebrow">About me</div>
+  <h2>From engineering concepts to testing.</h2>
+  <p>
+    I study Mechatronics Engineering at Tecnológico de Monterrey
+    and am pursuing a double degree in Electrical Engineering
+    at Hochschule Zittau/Görlitz in Germany.
+  </p>
+  <p>
+    My project experience includes manufacturing simulation,
+    vision-guided robotic manipulation, robot control,
+    embedded programming and mechanical design.
+    The projects below describe my individual contributions
+    within academic work.
+  </p>
+  <div class="education">
+    <p><strong>Tecnológico de Monterrey</strong><br>
+    Mechatronics Engineering</p>
+    <p><strong>Hochschule Zittau/Görlitz</strong><br>
+    Electrical Engineering · DHIK Double-Degree Programme</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="eyebrow">Selected work</div>
+  <h2>Engineering projects</h2>
+  <p class="section-intro">
+    Academic projects covering simulation, physical prototypes
+    and engineering analysis.
+  </p>
+
+  <div class="grid">
+
+    <article id="carrier">
+      <div class="label">Manufacturing · Academic team project</div>
+      <h3>Manufacturing Automation — Carrier</h3>
+      <p>
+        Automation concept for an air-conditioning subassembly.
+        I developed <strong>UR5e robot and conveyor sequences</strong>
+        in Siemens Process Simulate, assessing motion, reach and cell layout.
+      </p>
+      <p>
+        I also used <strong>Siemens Plant Simulation</strong> to analyse
+        material flow and cycle time. The proposed production model
+        predicted a reduction in equivalent processing time
+        from <strong>21 to 5.6 seconds per part</strong>.
+      </p>
+      <div class="tags">
+        <span>Process Simulate</span>
+        <span>Plant Simulation</span>
+        <span>UR5e</span>
+        <span>Cell Layout</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+    <article id="cognex-xarm">
+      <div class="label">Machine vision · Academic team project</div>
+      <h3>Vision-Guided Pick-and-Place — Cognex &amp; xArm</h3>
+      <p>
+        Integration of a Cognex industrial camera with an xArm robot
+        for a <strong>physically tested picking sequence</strong>.
+        My contribution focused on converting image measurements
+        into usable robot coordinates.
+      </p>
+      <p>
+        I worked on pixel-to-millimetre calibration, camera–robot
+        coordinate alignment, position offsets and gripper orientation.
+        A <strong>Python TCP/IP server</strong> connected detected
+        positions and angles with robot movement.
+      </p>
+      <div class="tags">
+        <span>Cognex</span>
+        <span>Python</span>
+        <span>TCP/IP</span>
+        <span>Calibration</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+    <article id="robot-control">
+      <div class="label">Control systems · Individual academic project</div>
+      <h3>Computed Torque Control — Two-Link Robot</h3>
+      <p>
+        Implementation of <strong>computed torque control</strong>
+        for a two-link robot using ROS and Python.
+      </p>
+      <p>
+        I evaluated trajectory tracking and torque demands,
+        examining how controller gains and changes in trajectory
+        amplitude and frequency affected simulated behaviour.
+      </p>
+      <div class="tags">
+        <span>ROS</span>
+        <span>Python</span>
+        <span>Robot Dynamics</span>
+        <span>Trajectory Tracking</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+    <article id="sign-language">
+      <div class="label">Deep learning · Individual academic project</div>
+      <h3>Sign Language Recognition</h3>
+      <p>
+        Image classification project using <strong>MATLAB and
+        AlexNet transfer learning</strong> to recognise
+        hand signs for letters A–D.
+      </p>
+      <p>
+        I used image augmentation during training and tested
+        predictions on new images, reviewing the predicted classes
+        and their associated probabilities.
+      </p>
+      <div class="tags">
+        <span>MATLAB</span>
+        <span>AlexNet</span>
+        <span>Transfer Learning</span>
+        <span>Image Classification</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+    <article id="puzzlebot">
+      <div class="label">Mechanical design &amp; vision · Academic team project</div>
+      <h3>Gripper Design &amp; Puzzlebot Inspection</h3>
+      <p>
+        Academic project involving a <strong>SolidWorks gripper concept</strong>
+        and machine vision inspection of parts, labels and QR codes.
+      </p>
+      <p>
+        My work included mechanical design and inspection tasks
+        using Cognex tools.
+      </p>
+      <div class="tags">
+        <span>SolidWorks</span>
+        <span>Cognex</span>
+        <span>Gripper Design</span>
+        <span>Inspection</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+    <article id="embedded-control">
+      <div class="label">Embedded systems · Academic team project</div>
+      <h3>Autonomous Model Tractor</h3>
+      <p>
+        Academic model-tractor project involving
+        <strong>STM32 programming and PID control</strong>
+        with encoder feedback.
+      </p>
+      <p>
+        The prototype combined velocity control, steering,
+        Bluetooth commands and obstacle-stop behaviour.
+      </p>
+      <div class="tags">
+        <span>STM32</span>
+        <span>PID Control</span>
+        <span>Encoders</span>
+        <span>Embedded Systems</span>
+      </div>
+      <a href="https://lucianarioscruz-7hylm8b.gamma.site">
+        Explore the full portfolio ↗
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow">Technical toolkit</div>
+  <h2>Tools I have used in projects</h2>
+  <div class="tags">
+    <span>Python</span>
+    <span>MATLAB</span>
+    <span>ROS</span>
+    <span>SolidWorks</span>
+    <span>Siemens Process Simulate</span>
+    <span>Siemens Plant Simulation</span>
+    <span>Cognex In-Sight</span>
+    <span>STM32</span>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">Let's connect</div>
+  <h2>Interested in working together?</h2>
+  <p>
+    I am seeking a six-month mandatory engineering internship
+    from March 2027 in Germany, with interests in robotics,
+    automation, control systems and machine vision.
+  </p>
+  <div class="buttons">
+    <a class="button primary" href="mailto:a01236500@tec.mx">
+      Email me
+    </a>
+    <a class="button" href="https://github.com/luciana-rios-cruz">
+      GitHub
+    </a>
+    <a class="button" href="https://lucianarioscruz-7hylm8b.gamma.site">
+      Full project portfolio
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © Luciana Rios Cruz · Engineering Portfolio
+  </div>
+</footer>
+
+</body>
+</html>
