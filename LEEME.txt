@@ -1,0 +1,33 @@
+PORTAFOLIO DE LUCIANA RIOS CRUZ
+
+Abre index.html con doble clic para revisar el sitio en tu computadora.
+Todos los archivos funcionan juntos, sin instalar programas.
+
+PARA SUBIR A GITHUB
+1. Descomprime este ZIP.
+2. Abre tu repositorio luciana-rios-cruz.github.io, pestaña Code.
+3. Elige Add file (o el botón + junto a Code) > Upload files.
+4. Arrastra TODOS los archivos .html y style.css de esta carpeta.
+   Deben quedar en la raíz del repositorio, junto a README.md.
+   No subas el ZIP ni una carpeta contenedora.
+5. Guarda con Commit changes. El nuevo index.html reemplazará la portada anterior.
+6. La actualización aparecerá en https://luciana-rios-cruz.github.io/ al terminar GitHub Pages.
+
+CONTENIDO
+index.html: inicio, educación, cronología y ocho proyectos.
+background.html: idiomas, liderazgo, formación y reconocimientos.
+Ocho archivos HTML: páginas independientes de los proyectos.
+style.css: diseño compartido, negro y azul, adaptable a celular.
+
+IMÁGENES, VIDEOS Y TABLAS
+No se incluyeron, siguiendo tu indicación. En el código hay comentarios
+para ubicarlos más adelante. No se necesita subir ningún recurso multimedia ahora.
+Los enlaces al CV se añadirán cuando estén disponibles los archivos.
+
+FUENTE DEL TEXTO
+Luciana-Rios-Cruz (1).pptx: diapositivas 1–15.
+Se conservaron los textos y las cifras del contenido editable.
+No se transcribieron tablas ni imágenes. Se quitaron duplicados, se corrigieron
+erratas evidentes y se omitieron indicaciones de reproducción que requieren videos.
+La cronología usa las fechas de las páginas detalladas de cada proyecto.
+No se modificó tu repositorio ni se publicó este paquete automáticamente.
