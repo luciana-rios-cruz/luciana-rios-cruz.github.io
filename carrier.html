@@ -25,11 +25,12 @@
 #main .carrier-figure:has(img[src="carrier-throughput-results-top.png"]) img,
 #main .carrier-figure:has(img[src="carrier-throughput-results-bottom.png"]) img { max-height:none; }
 /* The process flowchart belongs directly under Proposed Robotic Cell. */
-#main .carrier-figure:has(img[src="carrier-process-flowchart.png"]) {width:min(48%, 245px)}
+#main #proposed-robotic-cell { display:flex; flex-direction:column; }
+#main .carrier-figure:has(img[src="carrier-process-flowchart.png"]) {width:min(68%, 340px); max-width:340px; margin:22px auto 6px;}
 #main .carrier-figure:has(img[src="carrier-process-flowchart.png"]) img {max-height:none}
 @media (max-width:650px){
  #main .carrier-figure {width:min(80%, 340px)}
- #main .carrier-figure:has(img[src="carrier-process-flowchart.png"]) {width:min(72%, 300px)}
+ #main .carrier-figure:has(img[src="carrier-process-flowchart.png"]) {width:min(82%, 360px); max-width:360px}
  #main .carrier-figure:has(img[src="carrier-ur5e-specifications.png"]),
  #main .carrier-figure:has(img[src="carrier-throughput-results.png"]),
  #main .carrier-figure:has(img[src="carrier-throughput-results-top.png"]),
