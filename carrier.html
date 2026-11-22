@@ -160,6 +160,38 @@
   width: 96%;
   aspect-ratio: 16 / 9;
 }
+</style><style>
+/* Compact network diagram for a better-balanced lower card row. */
+#main .carrier-figure:has(img[src="carrier-ethernet-network.png"]) {
+  width: min(78%, 460px) !important;
+  max-width: 460px !important;
+  margin: 14px auto 18px !important;
+}
+/* Hover zoom: increase images visually without resizing the cards. */
+#main .carrier-figure { position: relative; }
+#main .carrier-figure a { position: relative; overflow: visible !important; border-radius: 7px; }
+#main .carrier-figure img {
+  position: relative;
+  z-index: 1;
+  border-radius: 7px;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+  transform-origin: center center;
+}
+@media (hover:hover) and (pointer:fine) {
+  #main .carrier-figure:hover { z-index: 10; }
+  #main .carrier-figure a:hover img,
+  #main .carrier-figure a:focus-visible img {
+    transform: scale(1.13) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,.65);
+    z-index: 11;
+  }
+}
+@media(max-width:650px){
+  #main .carrier-figure:has(img[src="carrier-ethernet-network.png"]) { width: 94% !important; max-width: none !important; }
+}
+@media(prefers-reduced-motion:reduce){
+  #main .carrier-figure img { transition: none !important; }
+}
 </style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
