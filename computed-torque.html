@@ -135,6 +135,17 @@
     .img-compact img{max-height:360px;object-fit:contain}
     .img-medium img{max-height:440px;object-fit:contain}
     .img-tall img{max-height:760px;object-fit:contain}
+
+    .key-results-plot img{
+      width:min(88%, 560px);
+      max-width:100%;
+      max-height:none;
+      object-fit:contain;
+    }
+    .key-results-plot figcaption{
+      max-width:92%;
+      margin-top:4px;
+    }
     .spacer-top{margin-top:10px}
     .video-block{margin-top:10px}
     .video-caption{margin:10px 0 8px;text-align:center}
@@ -492,6 +503,11 @@
  .performance-grid .key-results-plot img{max-height:500px;}
 }
 </style>
+<style id="key-results-final-size">
+/* Larger phase plot while retaining aspect ratio and the previous title fix. */
+.performance-grid .key-results-plot img {width:94% !important; max-width:94% !important; max-height:none !important; height:auto !important; object-fit:contain;}
+.performance-grid .key-results-plot {margin-top:16px !important;}
+</style>
 </head>
 <body>
 <main>
@@ -553,7 +569,7 @@
 </div>
 </section>
 <section class="panel">
-<h2 class="section-title">3. Torque Saturation</h2>
+<h2 class="minor-title">3. Torque Saturation</h2>
 <div class="stacked-tables">
 <figure class="figure img-medium"><img alt="Torque saturation table left" loading="lazy" src="ctc-saturation-table-left.png"/></figure>
 <figure class="figure img-medium"><img alt="Torque saturation table right" loading="lazy" src="ctc-saturation-table-right.png"/></figure>
