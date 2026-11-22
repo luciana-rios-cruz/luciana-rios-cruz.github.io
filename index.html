@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="dark" name="color-scheme"/><meta content="Engineering portfolio of Luciana Rios Cruz: mechatronics, robotics, automation, vision and control." name="description"/><title>Engineering Portfolio | Luciana Rios Cruz</title><link href="style.css" rel="stylesheet"/><style>
+main.wrap{width:min(1440px,calc(100% - 96px))}
+.hero{padding-top:48px}.hero h1{font-size:clamp(2.5rem,4vw,4rem);line-height:1.15}
+.hero .profession{font-size:clamp(1.3rem,2.1vw,2rem);margin-top:16px;margin-bottom:0}
+.hero .intro-copy{display:grid!important;grid-template-columns:minmax(240px,28%) minmax(0,1fr)!important;gap:48px!important;align-items:start!important;max-width:100%!important;margin:52px 0 36px!important;text-align:center}
+.hero .portrait{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;border-radius:7px;margin:0!important}
+.hero .intro-text{min-width:0;font-size:clamp(1.2rem,1.5vw,1.5rem);line-height:1.65}
+.hero .intro-text p{margin-bottom:26px}.hero .intro-text p:last-child{margin-bottom:0}
+.home-section>p,.education p,.contact p{font-size:1.2rem}.project-card p{font-size:1.1rem}.project-card .meta{font-size:1rem}
+@media(max-width:900px){main.wrap{width:calc(100% - 48px)}.hero .intro-copy{grid-template-columns:230px minmax(0,1fr)!important;gap:28px!important}.hero .intro-text{font-size:1.15rem}}
+@media(max-width:650px){main.wrap{width:calc(100% - 36px)}.hero .intro-copy{grid-template-columns:1fr!important;gap:26px!important;margin-top:32px!important}.hero .portrait{width:240px!important;margin:0 auto!important}.hero .intro-text{text-align:left;font-size:1.125rem}.hero{padding-top:32px}}
+</style><style>
+.hero .intro-text,.hero .intro-text p{text-align:justify;text-justify:inter-word}
+@media(max-width:650px){.hero .intro-text,.hero .intro-text p{text-align:justify}}
+</style><style>
+.portrait-column{min-width:0}
+.hero .portrait-buttons{display:grid;grid-template-columns:1.35fr 1.15fr 1fr;gap:6px;margin:16px 0 0;width:100%}
+.hero .portrait-buttons .button{min-width:0;padding:9px 5px;font-size:clamp(.75rem,.78vw,.9rem);line-height:1.25;min-height:46px;text-align:center;white-space:normal}
+@media(max-width:900px) and (min-width:651px){.hero .portrait-buttons{grid-template-columns:1fr}.hero .portrait-buttons .button{font-size:.9rem}}
+@media(max-width:650px){.portrait-column{width:min(100%,390px);margin:0 auto}.hero .portrait-buttons{grid-template-columns:1.35fr 1.15fr 1fr}.hero .portrait-buttons .button{font-size:.8rem}}
+</style><style>
+.hero .portrait-column{position:relative;align-self:stretch;min-height:0}
+.hero .portrait-stack{position:absolute;inset:0;display:flex;flex-direction:column;gap:12px;min-height:0}
+.hero .portrait-stack .portrait{flex:1 1 0;min-height:0;height:0!important;width:100%!important;object-fit:contain;object-position:center bottom}
+.hero .portrait-buttons{flex:none;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;margin:0;width:100%}
+.hero .portrait-buttons .button{font-size:.85rem;min-height:44px;padding:8px 7px}
+.hero .portrait-buttons .button:nth-child(1){grid-column:1;grid-row:1}
+.hero .portrait-buttons .button:nth-child(3){grid-column:2;grid-row:1}
+.hero .portrait-buttons .button:nth-child(2){grid-column:1 / -1;grid-row:2;justify-self:center;min-width:55%}
+@media(max-width:650px){.hero .portrait-column{position:static}.hero .portrait-stack{position:static;height:auto}.hero .portrait-stack .portrait{flex:none;width:240px!important;height:auto!important;margin:0 auto!important}.hero .portrait-buttons{grid-template-columns:1.3fr 1fr}}
+</style><style>
+/* Show the complete portrait at every viewport width and browser zoom. */
+.hero .portrait-stack .portrait{object-fit:contain!important;object-position:center bottom!important;aspect-ratio:auto}
+</style><style>
+/* Education: retain the existing layout; justify descriptive paragraphs only. */
+#about > p,#about .education p:not(.education-place):not(.meta){text-align:justify;text-justify:inter-word}
+</style><style>
+#about .education-table{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+#about .education-table .education{padding:0;border:2px solid #5b5b60;border-radius:7px;overflow:hidden;display:flex;flex-direction:column}
+.education-header{background:#3b3b40;color:#eee;text-align:center;font-size:1.8rem;font-weight:400;padding:12px;border-bottom:1px solid #5b5b60}
+.education-body{display:flex;flex-direction:column;flex:1;padding:24px}
+#about .education-table h3{font-size:clamp(1.3rem,1.7vw,1.7rem);line-height:1.3;color:var(--blue);margin-bottom:12px}
+#about .education-table .meta{color:var(--blue);font-size:clamp(1.2rem,1.5vw,1.5rem);margin-bottom:22px}
+#about .education-description{text-align:justify;text-justify:inter-word;margin-bottom:26px}
+#about .university-logo{display:block;width:88%;height:auto;aspect-ratio:3.1;object-fit:contain;background:#fff;border-radius:7px;margin-top:auto;margin-left:auto;margin-right:auto}
+@media(max-width:650px){#about .education-table{grid-template-columns:1fr}.education-body{padding:20px}}
+</style><style>
+/* Both university headings use the same typography and aligned title areas. */
+#about .education-table h3{font-size:clamp(1.3rem,1.7vw,1.7rem);line-height:1.3;min-height:2.6em;white-space:normal;letter-spacing:normal;overflow-wrap:normal}
+#about .education-table h3.degree-title{font-size:clamp(1.3rem,1.7vw,1.7rem);line-height:1.3;white-space:normal;letter-spacing:normal}
+@media(max-width:650px){#about .education-table h3{min-height:0}}
+</style><style>
+/* Selected Projects — illustrated timeline replaces the previous text list. */
+#projects .projects-timeline-image{display:block;width:100%;height:auto;margin:30px auto 44px;border-radius:10px;object-fit:contain}
+@media(max-width:700px){#projects .projects-timeline-image{margin:20px auto 30px}}
+</style><style>
+/* Uniform project thumbnails; keep the full original image visible. */
+#projects .project-card .project-image-link{display:block;width:100%;margin:0 0 20px;overflow:hidden;border-radius:9px;background:#111117}
+#projects .project-card .project-thumbnail{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;object-position:center;background:#111117}
+#projects .project-card .project-image-link:focus-visible{outline:3px solid #91c6ff;outline-offset:3px}
+</style><style>
+/* Portfolio motion: subtle, accessible transitions. */
+html { scroll-behavior: smooth; }
+#about, #projects, #contact { scroll-margin-top: 28px; }
+
+/* Project cards: light elevation and soft blue accent on hover. */
+#projects .project-card {
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  #projects .project-card:hover {
+    transform: translateY(-5px);
+    border-color: #80b9f5;
+    box-shadow: 0 12px 26px rgba(55, 116, 189, .18);
+  }
+  #projects .project-card .project-thumbnail {
+    transition: transform .38s ease;
+    transform-origin: center center;
+  }
+  #projects .project-card .project-image-link:hover .project-thumbnail,
+  #projects .project-card:hover .project-thumbnail {
+    transform: scale(1.035);
+  }
+}
+
+/* Animate only after JavaScript confirms IntersectionObserver support. */
+html.motion-ready .motion-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .62s ease, transform .62s ease;
+}
+html.motion-ready .motion-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  #projects .project-card,
+  #projects .project-card .project-thumbnail,
+  html.motion-ready .motion-reveal {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+</style><style>
+/* Selected Projects: justified descriptions and consistent GO alignment. */
+#projects .projects-grid { align-items: stretch; }
+#projects .projects-grid > .project-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 0;
+}
+#projects .project-card > p:not(.meta) {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+#projects .project-card > .meta {
+  margin-top: auto;
+  padding-top: 20px;
+}
+#projects .project-card > .go {
+  align-self: center;
+  margin-top: 18px;
+}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><nav aria-label="Main navigation" class="wrap"><a class="brand" href="index.html">Luciana Rios Cruz</a><div class="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="background.html">Background</a><a href="#contact">Contact</a></div></nav></header><main class="wrap" id="main"><section class="hero"><h1>Luciana Rios Cruz</h1><p class="profession">Mechatronics &amp; Electrical Engineering Student</p><div class="intro-copy"><div class="portrait-column"><div class="portrait-stack"><img alt="Luciana Rios Cruz" class="portrait" fetchpriority="high" height="1448" src="Photo_Luciana.jpeg" width="1086"/><div class="buttons portrait-buttons"><a class="button light" href="#projects">Explore My Projects</a><a class="button" href="background.html">My Background</a><a class="button light" href="#contact">Contact Me</a></div></div></div><div class="intro-text"><p>I am a <strong>Mechatronics Engineering</strong> student at <strong>Tecnológico de Monterrey</strong>, Mexico, currently pursuing a double degree in <strong>Electrical Engineering</strong> at <strong>Hochschule Zittau/Görlitz</strong>, Germany. Based in Zittau, I focus on integrating mechanical design, electronics, and control to develop and evaluate engineering systems.</p><p>I develop robotic simulations, vision-guided pick-and-place systems, and control solutions for <strong>electromechanical prototypes</strong>. My projects combine mechanical design, electronics, and programming to address <strong>manufacturing</strong>, motion control, and temperature regulation challenges.</p><p>I am seeking an engineering internship in Germany starting in <strong>March 2027</strong> and I am particularly interested in combining these areas to contribute to real <strong>manufacturing</strong> processes, and continue developing my technical skills.</p></div></div></section><section class="home-section" id="about"><h2>About &amp; Education</h2><p>Studying engineering in Mexico and Germany has given me the opportunity to learn in different academic and cultural environments. Through university projects, I am developing practical skills in mechanical design, robotics, computer vision, and control, while learning to collaborate across disciplines.</p><div class="education-grid education-table">
+<article class="education"><div class="education-header">1</div><div class="education-body"><h3 class="degree-title">Electrical Engineering · Double-Degree Program</h3><p class="meta">Germany | 2026–Present</p><p class="education-description">I am expanding my engineering knowledge through coursework in artificial neural networks, image processing, collaborative robotics, and microcontrollers.</p><img alt="Hochschule Zittau/Görlitz — University of Applied Sciences" class="university-logo" height="280" loading="lazy" src="logo-hszg.png" width="865"/></div></article>
+<article class="education"><div class="education-header">2</div><div class="education-body"><h3>Mechatronics Engineering</h3><p class="meta">Mexico | 2023–Present</p><p class="education-description">My studies combine mechanics, electronics, programming, and control, with practical team projects in robotics and manufacturing automation.</p><img alt="Tecnológico de Monterrey" class="university-logo" height="270" loading="lazy" src="logo-tec.png" width="868"/></div></article>
+</div></section><section class="home-section" id="projects"><h2>Selected Projects</h2><p>A selection of academic work exploring manufacturing automation, robotic design, computer vision, and control systems. Each project highlights the engineering challenge, my individual contribution, and the tools used.</p><img alt="Project timeline from May 2025 through June 2026, showing Hydraulic Cutting Attachment, Tractor Cab Climate Control, Autonomous Scale Tractor, Computed Torque Control, Machine Vision, Gripper and Puzzlebot Inspection, Sign Classification, and Carrier Manufacturing Automation." class="projects-timeline-image" height="710" loading="lazy" src="timeline-projects.png" width="1930"/><div class="projects-grid"><article class="project-card"><a class="project-image-link" href="carrier.html"><img alt="Simulation of manufacturing conveyor and robot cell" class="project-thumbnail" loading="lazy" src="project-carrier.png"/></a><!-- Project thumbnail can be inserted here later. --><h3><a href="carrier.html">Manufacturing Automation — Carrier</a></h3><p>Developed conveyor and UR5e robot sequences in Siemens Process Simulate, assessing motion, reach, and cell layout to support an academic proposal for automated subassembly operations.</p><p class="meta">Academic Team Project · 2026</p><a aria-label="View Manufacturing Automation — Carrier" class="go" href="carrier.html">GO</a></article><article class="project-card"><a class="project-image-link" href="machine-vision.html"><img alt="Cognex machine vision inspection view" class="project-thumbnail" loading="lazy" src="project-machine-vision.png"/></a><!-- Project thumbnail can be inserted here later. --><h3><a href="machine-vision.html">Machine Vision for Robotic Pick &amp; Place</a></h3><p>Configured Cognex edge detection and measurement, calibrated pixels to millimetres, and helped align camera and robot coordinates for an xArm robotic pick and place application.</p><p class="meta">Academic Team Project · 2026</p><a aria-label="View Machine Vision for Robotic Pick &amp; Place" class="go" href="machine-vision.html">GO</a></article><article class="project-card"><a class="project-image-link" href="puzzlebot.html"><img alt="Puzzlebot packaging robotic cell presentation" class="project-thumbnail" loading="lazy" src="project-puzzlebot.png"/></a><!-- Project thumbnail can be inserted here later. --><h3><a href="puzzlebot.html">Gripper Design &amp; Puzzlebot Inspection</a></h3><p>Designed a gripper in SolidWorks, implemented Cognex inspections for components, labels, and QR codes, and prepared the proposal’s bill of materials and return on investment.</p><p class="meta">Academic Team Project · 2026</p><a aria-label="View Gripper Design &amp; Puzzlebot Inspection" class="go" href="puzzlebot.html">GO</a></article><article class="project-card"><a class="project-image-link" href="computed-torque.html"><img alt="Two-link robot and control response graphs" class="project-thumbnail" loading="lazy" src="project-computed-torque.png"/></a><!-- Project thumbnail can be inserted here later. --><h3><a href="computed-torque.html">Computed Torque Control of a Two-Link Robot</a></h3><p>Implemented computed torque control in ROS for a two-link robot, tuned gains, and evaluated tracking under changing trajectories and torque limits.</p><p class="meta">Academic Project · 2026</p><a aria-label="View Computed Torque Control of a Two-Link Robot" class="go" href="computed-torque.html">GO</a></article><article class="project-card"><!-- Project thumbnail can be inserted here later. --><h3><a href="sign-classification.html">Sign Classification with Deep Learning</a></h3><p>Adapted AlexNet in MATLAB using transfer learning to classify signs A–D, augmented training images, and evaluated predictions and class probabilities using additional hand images during individual prediction tests.</p><p class="meta">Academic project · 2026</p><a aria-label="View Sign Classification with Deep Learning" class="go" href="sign-classification.html">GO</a></article><article class="project-card"><!-- Project thumbnail can be inserted here later. --><h3><a href="scale-tractor.html">Autonomous Scale Tractor — John Deere</a></h3><p>Collaborated on an STM32 vehicle prototype integrating PID speed regulation, encoder feedback, inertial steering correction, ultrasonic obstacle detection, and Bluetooth communication for commands and telemetry.</p><p class="meta">Academic Team Project · 2025</p><a aria-label="View Autonomous Scale Tractor — John Deere" class="go" href="scale-tractor.html">GO</a></article><article class="project-card"><!-- Project thumbnail can be inserted here later. --><h3><a href="hydraulic-attachment.html">Hydraulic Cutting Attachment — John Deere</a></h3><p>Led mechanical design of a hydraulic cutting attachment for a John Deere 512 front loader, contributing to a scissor mechanism actuated by four hydraulic pistons.</p><p class="meta">Community service · 160 hours · 2025</p><a aria-label="View Hydraulic Cutting Attachment — John Deere" class="go" href="hydraulic-attachment.html">GO</a></article><article class="project-card"><!-- Project thumbnail can be inserted here later. --><h3><a href="cab-climate.html">Tractor Cab Climate Control — John Deere</a></h3><p>Contributed to designing, building, and evaluating a tractor cab climate system using engine heat, combining CAD, thermal simulation, and analog control circuits with operational amplifiers.</p><p class="meta">Academic Team Projects· Community service · 2025</p><a aria-label="View Tractor Cab Climate Control — John Deere" class="go" href="cab-climate.html">GO</a></article></div></section><section class="home-section contact" id="contact"><h2>CV &amp; Contact</h2><p>Zittau, Germany</p><p>I am seeking an engineering internship in Germany starting in March 2027.</p><div class="buttons"><a class="button light" href="mailto:mialuricru@gmail.com">Email Me</a><a class="button" href="https://www.linkedin.com/in/luciana-r%C3%ADos-cruz-bb83852aa/">LinkedIn</a><a class="button" href="https://github.com/luciana-rios-cruz">GitHub</a></div><!-- Add CV links here when the CV files are uploaded. --></section></main><footer><div class="wrap">© Luciana Rios Cruz · Engineering Portfolio<a href="index.html#contact">Contact</a></div></footer><script>
+// Reveal visible sections and project cards as visitors scroll.
+(() => {
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const targets = document.querySelectorAll(
+    '#about > h2, #about > p, #about .education, ' +
+    '#projects > h2, #projects > p, #projects .timeline, ' +
+    '#projects .timeline-image, #projects .project-card, ' +
+    '#contact > h2, #contact > p, #contact .buttons'
+  );
+  if (!targets.length) return;
+  targets.forEach(element => element.classList.add('motion-reveal'));
+  document.documentElement.classList.add('motion-ready');
+  const observer = new IntersectionObserver((entries, instance) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        instance.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px 35px 0px' });
+  targets.forEach(element => observer.observe(element));
+})();
+</script></body></html>
