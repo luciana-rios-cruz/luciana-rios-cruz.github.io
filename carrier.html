@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="dark" name="color-scheme"/>
+<meta content="Engineering portfolio of Luciana Rios Cruz: mechatronics, robotics, automation, vision and control." name="description"/>
+<title>Manufacturing Automation — Carrier SUMCHX-400 | Luciana Rios Cruz</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+/* Carrier images: scoped layout; existing site typography and panels remain untouched. */
+#main .carrier-figure{margin:18px auto 25px;max-width:100%;min-width:0;text-align:center}
+#main .carrier-figure a{display:block;max-width:100%;border-radius:8px;overflow:hidden;background:#14151b}
+#main .carrier-figure img{display:block;width:100%;max-width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;background:#14151b;transition:transform .25s ease}
+#main .carrier-figure a:hover img{transform:scale(1.025)}
+#main .carrier-figure a:focus-visible{outline:3px solid #91c6ff;outline-offset:3px}
+#sequence-and-simulation .carrier-figure img{max-height:680px}
+@media(prefers-reduced-motion:reduce){#main .carrier-figure img{transition:none}#main .carrier-figure a:hover img{transform:none}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav aria-label="Main navigation" class="wrap"><a class="brand" href="index.html">Luciana Rios Cruz</a><div class="nav-links"><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="background.html">Background</a><a href="index.html#contact">Contact</a></div></nav></header>
+<main class="wrap" id="main">
+<div class="project-top"><a class="back" href="index.html#projects">Back to all projects</a><h1>Manufacturing Automation — Carrier SUMCHX-400</h1><p class="meta">Academic Team Project | Tecnológico de Monterrey | March–June 2026</p><p class="subtitle">Robotic cell design, manufacturing simulation, and feasibility analysis for a tray subassembly process.</p></div>
+<div class="project-grid">
+<div class="project-panel">
+<section id="project-overview"><h2>PROJECT OVERVIEW</h2><p>Developed a team automation proposal for Carrier’s SUMCHX-400 tray subassembly station, integrating robotic handling, conveyor transport, machine vision planning, and production simulation.</p><figure class="carrier-figure"><a href="carrier-tray-assembly.png" rel="noopener noreferrer" target="_blank"><img alt="SUMCHX-400 tray subassembly reference" decoding="async" loading="lazy" src="carrier-tray-assembly.png"/></a></figure></section>
+<section id="the-engineering-challenge"><h2>THE ENGINEERING CHALLENGE</h2><p>Reduce repetitive manual handling and variability in positioning, assembly, and inspection. The baseline process required 21 seconds per part, equivalent to approximately 171 parts per hour.</p><figure class="carrier-figure"><a href="carrier-manual-station.png" rel="noopener noreferrer" target="_blank"><img alt="Operator handling components at the tray assembly station in the simulation" decoding="async" loading="lazy" src="carrier-manual-station.png"/></a></figure></section>
+<section id="proposed-robotic-cell"><h2>PROPOSED ROBOTIC CELL</h2><p>The proposed cell combined a U-shaped conveyor, two UR5e collaborative robots, dedicated fixtures carrying three T-shaped tray components, and Cognex In-Sight 2800 cameras. The operating sequence was:</p>
+<p><strong>Loading:</strong> The first robot places three T-shaped components into a dedicated fixture.</p>
+<p><strong>Fixture transfer:</strong> Once loaded, the robot transfers the fixture onto the conveyor.</p>
+<p><strong>Position verification:</strong> The conveyor moves the fixture through a proposed vision checkpoint to verify component orientation and positioning.</p>
+<p><strong>Heat shield placement:</strong> The second robot picks and places a heat shield onto each T-shaped component.</p>
+<p><strong>Final inspection and transfer:</strong> The proposed inspection stage checks the completed assemblies before they move to the downstream station or work-in-progress area.</p>
+<p>This sequence was intended to make handling and placement more repeatable while reducing the manual work required at the station.</p></section>
+</div>
+<div class="project-panel">
+<section id="fixture-and-gripper-concept"><h2>FIXTURE AND GRIPPER CONCEPT</h2><p>Designed around poka-yoke principles, the fixtures located three components consistently. The gripper concept addressed handling requirements for components, fixtures, and heat shields. Together, the fixture and gripping concepts addressed how parts would be located, held, and transferred throughout the cell.</p><figure class="carrier-figure"><a href="carrier-fixture-drawing.png" rel="noopener noreferrer" target="_blank"><img alt="Dimensional drawing of the fixture design" decoding="async" loading="lazy" src="carrier-fixture-drawing.png"/></a></figure><figure class="carrier-figure"><a href="carrier-fixture-model.png" rel="noopener noreferrer" target="_blank"><img alt="CAD model of a three-component positioning fixture" decoding="async" loading="lazy" src="carrier-fixture-model.png"/></a></figure><figure class="carrier-figure"><a href="carrier-robot-gripper.png" rel="noopener noreferrer" target="_blank"><img alt="Gripper design attached to a collaborative robot" decoding="async" loading="lazy" src="carrier-robot-gripper.png"/></a></figure></section>
+<section id="robot-selection"><h2>ROBOT SELECTION</h2><p>Selected the UR5e using its 5 kg payload, 850 mm reach, and ±0.03 mm specified repeatability to assess suitability for handling and placement within the proposed layout.</p><figure class="carrier-figure"><a href="carrier-ur5e.png" rel="noopener noreferrer" target="_blank"><img alt="UR5e collaborative robot used in the proposed cell" decoding="async" loading="lazy" src="carrier-ur5e.png"/></a></figure><figure class="carrier-figure"><a href="carrier-ur5e-specifications.png" rel="noopener noreferrer" target="_blank"><img alt="Table of UR5e technical specifications and selection rationale" decoding="async" loading="lazy" src="carrier-ur5e-specifications.png"/></a></figure></section>
+<section id="production-modeling-plant-simulation"><h2>PRODUCTION MODELING — PLANT SIMULATION</h2><p>Compared the baseline process with the proposed model incorporating material buffers, assembly, inspection, and WIP transfer. The configured model used 5.6 seconds per part and produced 643 parts in a one-hour simulation, approximately 3.75× the baseline output. These were simulation results.</p><figure class="carrier-figure"><a href="carrier-throughput-results.png" rel="noopener noreferrer" target="_blank"><img alt="Plant Simulation results showing 643 parts per hour" decoding="async" loading="lazy" src="carrier-throughput-results.png"/></a></figure><figure class="carrier-figure"><a href="carrier-plant-simulation-flow.png" rel="noopener noreferrer" target="_blank"><img alt="Plant Simulation production flow model with sources buffers assembly and inspection" decoding="async" loading="lazy" src="carrier-plant-simulation-flow.png"/></a></figure></section>
+</div>
+<div class="project-panel">
+<section id="proposed-machine-vision"><h2>PROPOSED MACHINE VISION</h2><p>Proposed Cognex In-Sight 2800 inspections for component presence, orientation, heat shield placement, and alignment, with failed checks triggering rejection, rework, or operator intervention.</p></section>
+<section id="industrial-communication-concept"><h2>INDUSTRIAL COMMUNICATION CONCEPT</h2><p>Proposed an EtherNet/IP network connecting a CompactLogix L32E controller with the UR5e robots, Cognex vision system, and 1734-AENTR remote I/O to coordinate cell operations and inspection signals.</p></section>
+</div>
+<div class="project-panel">
+<section id="economic-feasibility"><h2>ECONOMIC FEASIBILITY</h2><p>The financial model projected a 1.4-year payback period and 256.8% five-year ROI, based on estimated investment, labor and rework savings, maintenance, and energy costs. These figures were projections under the proposal’s assumptions.</p></section>
+<section id="sequence-and-simulation"><h2>SEQUENCE AND SIMULATION</h2><figure class="carrier-figure"><a href="carrier-process-flowchart.png" rel="noopener noreferrer" target="_blank"><img alt="Proposed sequence from loading and inspection through tray release" decoding="async" loading="lazy" src="carrier-process-flowchart.png"/></a></figure></section>
+</div>
+</div>
+<div class="closing">
+<section id="my-contribution"><h2>MY CONTRIBUTION</h2><p>I developed the conveyor and robotic cell simulation in Siemens Process Simulate, created the UR5e handling sequences, and assessed robot motion, reach, and equipment placement.</p><p>My work focused on translating the proposed process into a coordinated virtual sequence: arranging the cell, defining handling operations, and checking whether the robots could reach the required pickup and placement locations.</p><p>I also contributed to the team’s production comparison and the presentation of the proposed automation concept.</p></section>
+<section id="what-i-learned"><h2>WHAT I LEARNED</h2><p>Strengthened my skills in robotic sequencing, workspace assessment, and cell layout, while learning to connect robot feasibility with material flow, production capacity, and economic evaluation.</p></section>
+<section class="tools"><h2>TOOLS &amp; METHODS</h2><ul class="tags"><li>Siemens Process Simulate</li><li>Siemens Plant Simulation</li><li>UR5e Simulation</li><li>CAD</li><li>Poka-Yoke</li><li>Machine Vision Planning</li><li>EtherNet/IP</li><li>Economic Analysis</li></ul></section>
+</div>
+<nav aria-label="Project navigation" class="project-navigation"><a href="cab-climate.html">Previous project</a><a class="button light" href="index.html#projects">All projects</a><a href="machine-vision.html">Next project</a></nav>
+</main><footer><div class="wrap">© Luciana Rios Cruz · Engineering Portfolio<a href="index.html#contact">Contact</a></div></footer>
+</body></html>
