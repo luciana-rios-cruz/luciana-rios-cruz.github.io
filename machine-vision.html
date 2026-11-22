@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="dark" name="color-scheme"/><meta content="Cognex industrial camera and xArm robotic pick and place project" name="description"/><title>Machine Vision for Robotic Pick &amp; Place | Luciana Rios Cruz</title><link href="style.css" rel="stylesheet"/>
+<style>
+/* Specific project styling: self-contained so existing style.css need not be changed. */
+:root{--mv-blue:#98c7ff;--mv-line:#55565c}
+#main.mv-page{max-width:1320px;margin:auto;padding:28px 26px 48px;color:#f5f6fa}
+.mv-page .project-top{margin-bottom:28px}
+.mv-page .project-top h1{font-size:clamp(1.75rem,3.3vw,2.8rem)!important;line-height:1.2;font-weight:400;color:var(--mv-blue);margin:20px 0 18px}
+.mv-page .project-top .meta{font-size:1rem;margin:0 0 14px;text-align:left}
+.mv-page .project-top .subtitle{font-size:1.08rem;margin:0;text-align:left}
+.mv-page .project-top .back{color:#fff;text-decoration:underline;font-size:.9rem}
+.mv-page .mv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 22px;align-items:stretch}
+.mv-page .mv-card{min-width:0;border:1px solid var(--mv-line);border-radius:6px;padding:22px 22px 18px;background:#050505;display:flex;flex-direction:column;box-sizing:border-box}
+.mv-page .mv-card section + section{margin-top:24px}
+.mv-page .mv-card h2{font-size:clamp(1.15rem,1.65vw,1.65rem);font-weight:400;line-height:1.22;color:var(--mv-blue);text-align:center;margin:0 0 13px}
+.mv-page .mv-card p,.mv-page .mv-card li{font-size:clamp(.96rem,1.15vw,1.08rem);line-height:1.48}
+.mv-page .mv-card p{text-align:justify;text-justify:inter-word;hyphens:auto;margin:0 0 14px}
+.mv-page .mv-card ul{padding-left:24px;margin:0 0 12px}
+.mv-page .mv-card ul li{margin:8px 0;text-align:justify}
+.mv-page .mv-card ol{margin:0;padding-left:28px}
+.mv-page .mv-card ol li{margin:0 0 9px;text-align:justify;hyphens:auto}
+.mv-page .mv-card figure{display:block;max-width:100%;padding:0;margin:13px auto 17px;text-align:center}
+.mv-page .mv-card figure a{display:block;text-decoration:none;line-height:0;border-radius:7px;outline-offset:3px}
+.mv-page .mv-card figure img{display:block;max-width:100%;height:auto;object-fit:contain;margin:auto;border-radius:6px;transition:transform .23s ease,box-shadow .23s ease;transform-origin:center}
+.mv-page .mv-card figure a:hover img,.mv-page .mv-card figure a:focus-visible img{transform:scale(1.055);box-shadow:0 12px 30px #000b;position:relative;z-index:5}
+.mv-page .mv-card figure a:focus-visible{outline:2px solid var(--mv-blue)}
+.mv-page .mv-card figure.photo{width:min(76%,400px)}
+.mv-page .mv-card figure.interface{width:min(95%,550px)}
+.mv-page .mv-card figure.flowchart{width:min(78%,450px)}
+.mv-page .mv-card figure.circle{width:min(80%,400px)}
+.mv-page .mv-card figure.results{width:min(90%,530px)}
+.mv-page .mv-card figure.calibration{width:min(60%,330px)}
+.mv-page .mv-card figure.orientation{width:min(93%,540px)}
+.mv-page .mv-card figure.code{width:min(90%,500px)}
+.mv-page .mv-card .video-container{position:relative;aspect-ratio:16/9;width:100%;max-width:590px;margin:14px auto 0;border-radius:8px;overflow:hidden;background:#111}
+.mv-page .mv-card .video-container iframe{border:0;display:block;width:100%;height:100%}
+.mv-page .mv-card.videos{justify-content:space-between}
+.mv-page .mv-card.videos .video-container{margin-top:16px}
+.mv-page .mv-card .footnote{color:#b7b8bd;font-size:.85rem;text-align:center}
+.mv-page .mv-closing{border:1px solid var(--mv-line);border-radius:7px;margin-top:25px;overflow:hidden;background:#050505}
+.mv-page .mv-closing-header{height:68px;background:#3b3b3f;display:flex;justify-content:center;align-items:center;border-bottom:1px solid var(--mv-line)}
+.mv-page .mv-closing-header img{height:36px;width:auto;object-fit:contain}
+.mv-page .mv-closing-body{padding:23px 29px 27px}
+.mv-page .mv-closing h2{color:var(--mv-blue);font-weight:400;font-size:1.55rem;margin:15px 0 13px}
+.mv-page .mv-closing h2:first-child{margin-top:0}
+.mv-page .mv-closing p{font-size:1.08rem;line-height:1.6;text-align:justify;hyphens:auto;margin:0 0 16px}
+.mv-page .mv-tags{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:9px;padding:0;margin:13px 0 25px}
+.mv-page .mv-tags li{border:1px solid var(--mv-line);padding:8px 12px;border-radius:5px;white-space:nowrap;font-size:.98rem}
+.mv-page .mv-logos{max-width:285px;width:90%;height:auto;display:block;margin:auto;border-radius:10px}
+.mv-page .project-navigation{margin-top:28px}
+@media(max-width:750px){#main.mv-page{padding:20px 15px 38px}.mv-page .mv-grid{grid-template-columns:minmax(0,1fr);gap:16px}.mv-page .mv-card{padding:19px 15px}.mv-page .mv-card figure.flowchart{width:min(70%,390px)}.mv-page .mv-closing-body{padding:19px}.mv-page .mv-card figure.code{width:min(92%,510px)}}
+@media(prefers-reduced-motion:reduce){.mv-page .mv-card figure img{transition:none!important}.mv-page .mv-card figure a:hover img{transform:none!important}}
+</style><style>
+/* Closing section: justify prose but center Tools & Methods title and badges. */
+.mv-page .mv-closing-body #my-contribution p,
+.mv-page .mv-closing-body #what-i-learned p {text-align:justify!important;text-justify:inter-word;hyphens:auto}
+.mv-page #tools-and-methods > h2 {text-align:center!important}
+.mv-page #tools-and-methods .mv-tags {display:flex;justify-content:center!important;align-items:center;flex-wrap:wrap;gap:8px;margin:14px auto 20px;padding:0}
+.mv-page #tools-and-methods .mv-tags li {text-align:center;list-style:none}
+.mv-page #tools-and-methods .mv-logos {display:block;margin:15px auto 0}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><nav aria-label="Main navigation" class="wrap"><a class="brand" href="index.html">Luciana Rios Cruz</a><div class="nav-links"><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="background.html">Background</a><a href="index.html#contact">Contact</a></div></nav></header>
+<main class="wrap mv-page" id="main"><div class="project-top"><a class="back" href="index.html#projects">Back to all projects</a><h1>Machine Vision for Robotic Pick &amp; Place</h1><p class="meta">Academic Team Project | Tecnológico de Monterrey | March–May 2026</p><p class="subtitle">Vision-guided robotic manipulation using Cognex, Python, and TCP/IP communication.</p></div>
+<div class="mv-grid">
+<article class="mv-card"><section id="project-overview"><h2>PROJECT OVERVIEW</h2><p>Integrated a <strong>Cognex industrial camera</strong> with an <strong>xArm robot</strong> to detect a part’s position and orientation and execute a physical pick-and-place sequence through a Python TCP server.</p></section>
+<section id="the-engineering-challenge"><h2>THE ENGINEERING CHALLENGE</h2><p>Convert image measurements into robot coordinates and align the gripper with rotated parts. Key challenges included pixel-to-millimeter conversion, camera-to-robot offsets, yaw correction, and lighting sensitivity.</p>
+<figure class="photo"><a href="mv-calibration-setup.png" rel="noopener" target="_blank"><img alt="Cognex calibration checkerboard on the robotic inspection station" loading="lazy" src="mv-calibration-setup.png"/></a></figure><figure class="interface"><a href="mv-cognex-interface.png" rel="noopener" target="_blank"><img alt="Cognex industrial machine vision interface during camera configuration" loading="lazy" src="mv-cognex-interface.png"/></a></figure></section></article>
+<article class="mv-card"><section id="system-architecture"><h2>SYSTEM ARCHITECTURE</h2><ul><li><strong>Cognex camera:</strong> Detects the part and sends position and angle data as a TCP client.</li><li><strong>Python server:</strong> Receives measurements, applies coordinate offsets, and generates robot commands.</li><li><strong>xArm robot:</strong> Executes the handling sequence through the xArm SDK.</li></ul><figure class="flowchart"><a href="mv-system-flowchart.png" rel="noopener" target="_blank"><img alt="Flowchart of Cognex data transfer and xArm pick-and-place motion through Python" loading="lazy" src="mv-system-flowchart.png"/></a></figure></section></article>
+<article class="mv-card"><section id="machine-vision-position-detection"><h2>MACHINE VISION &amp; POSITION DETECTION</h2><p>Used pattern matching, circle detection, edge detection, and distance measurements to locate the part relative to a fixed conveyor sensor plate. Horizontal and vertical distances provided the part’s position.</p><figure class="circle"><a href="mv-circle-detection.png" rel="noopener" target="_blank"><img alt="Green circular features detected by industrial vision" loading="lazy" src="mv-circle-detection.png"/></a></figure><figure class="results"><a href="mv-detection-results.png" rel="noopener" target="_blank"><img alt="Cognex pattern matching and circle diameter measurements" loading="lazy" src="mv-detection-results.png"/></a></figure></section>
+<section id="pixel-to-millimeter-conversion"><h2>PIXEL-TO-MILLIMETER CONVERSION</h2><p>Established a reference scale of <strong>70.172 pixels = 10 mm</strong>, equivalent to approximately <strong>0.1425 mm per pixel</strong>. Image distances were converted into millimeters before transmission to the robot.</p><figure class="calibration"><a href="mv-pixel-calibration.png" rel="noopener" target="_blank"><img alt="Cognex distance measurement of 70.172 pixels used for scale calibration" loading="lazy" src="mv-pixel-calibration.png"/></a></figure></section></article>
+<article class="mv-card"><section id="orientation-coordinate-transformation"><h2>ORIENTATION &amp; COORDINATE TRANSFORMATION</h2><p>Calculated part orientation using <strong>atan2</strong> from the center-to-corner displacement, with a <strong>45° reference correction</strong>. Camera-to-robot offsets and yaw adjustments aligned the gripper with the detected part.</p><figure class="orientation"><a href="mv-orientation.png" rel="noopener" target="_blank"><img alt="Cognex tool measuring distance and reference position on robot workspace" loading="lazy" src="mv-orientation.png"/></a></figure></section>
+<section id="tcp-ip-communication"><h2>TCP/IP COMMUNICATION</h2><p>The Python server listened on <strong>port 3000</strong>, receiving comma-separated messages containing a leading flag, X, Y, and angle. The program parsed these values and checked robot availability before executing a sequence.</p><figure class="code"><a href="mv-python-server.png" rel="noopener" target="_blank"><img alt="Python TCP server using xArm SDK and socket binding on port 3000" loading="lazy" src="mv-python-server.png"/></a></figure></section></article>
+<article class="mv-card videos"><section id="pick-and-place-sequence"><h2>PICK-AND-PLACE SEQUENCE</h2><ol><li><strong><u>Detect:</u></strong> Locate the part and calculate its orientation.</li><li><strong><u>Transmit:</u></strong> Send coordinates and angle to Python.</li><li><strong><u>Approach:</u></strong> Open the gripper and move above the pickup point.</li><li><strong><u>Pick:</u></strong> Descend, grip the part, and lift.</li><li><strong><u>Place:</u></strong> Move to the predefined destination and release the part.</li></ol></section><div class="video-container"><iframe allow="accelerometer; autoplay; encrypted-media; picture-in-picture; clipboard-write; gyroscope; web-share" allowfullscreen="" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/47PhyedMwIg?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=47PhyedMwIg&amp;playsinline=1&amp;rel=0" title="Pick-and-place sequence using Cognex and xArm"></iframe></div></article>
+<article class="mv-card videos"><section id="testing-results"><h2>TESTING &amp; RESULTS</h2><p>Validated communication, positioning above the part, and complete pick-and-place cycles with aligned and rotated parts. The robot adjusted its yaw to match the detected orientation before gripping. Tests confirmed that pixel-to-millimeter conversion and camera-to-robot offsets enabled the robot to locate, grasp, and transfer the part to a predefined destination.</p></section><div class="video-container"><iframe allow="accelerometer; autoplay; encrypted-media; picture-in-picture; clipboard-write; gyroscope; web-share" allowfullscreen="" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/eiO2zzAL1m8?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=eiO2zzAL1m8&amp;playsinline=1&amp;rel=0" title="Testing and results of Cognex xArm pick-and-place"></iframe></div></article>
+</div>
+<div class="mv-closing"><div class="mv-closing-header"><span aria-hidden="true">▣</span></div><div class="mv-closing-body"><section id="my-contribution"><h2>MY CONTRIBUTION</h2><p>I configured Cognex edge detection and distance measurements, established the pixel-to-millimeter conversion, and helped integrate camera-to-robot offsets and TCP/IP communication.</p></section><section id="what-i-learned"><h2>WHAT I LEARNED</h2><p>Strengthened my skills in industrial vision, coordinate transformation, and robot integration. I learned how lighting, reference selection, and angular calibration affect detection reliability and gripping performance.</p></section><section id="tools-and-methods"><h2>TOOLS &amp; METHODS</h2><ul class="mv-tags"><li>Cognex</li><li>Python</li><li>xArm SDK</li><li>TCP/IP Sockets</li><li>Pattern Matching</li><li>Edge Detection</li><li>Pixel-to-mm Conversion</li><li>atan2</li><li>Coordinate Offsets</li></ul><img alt="Cisco Packet Tracer, In-Sight Explorer, Python and UF software logos" class="mv-logos" src="mv-software-logos.png"/></section></div></div>
+<nav aria-label="Project navigation" class="project-navigation"><a href="carrier.html">Previous project</a><a class="button light" href="index.html#projects">All projects</a><a href="puzzlebot.html">Next project</a></nav>
+</main><footer><div class="wrap">© Luciana Rios Cruz · Engineering Portfolio<a href="index.html#contact">Contact</a></div></footer></body></html>
