@@ -1,0 +1,18 @@
+CARRIER — VISUAL UX / CINEMATIC VERSION
+
+1. Antes de actualizar GitHub, haz una copia de tu carrier.html actual.
+2. Sube carrier.html y los archivos .png incluidos a la misma carpeta donde está tu página Carrier.
+3. Conserva tu archivo style.css existente. Esta página sigue enlazando ese CSS externo, igual que las versiones anteriores.
+4. Abre la página y comprueba el resultado en computadora y celular.
+
+CAMBIOS
+- Project Review textual reemplazado por galería visual de tres escenas.
+- Todas las composiciones usan archivos de imagen originales del proyecto Carrier.
+- Flechas, miniaturas, teclado (flechas izquierda/derecha) y animaciones entre escenas.
+- Avance automático aproximadamente cada 7.5 segundos, pausado al pasar el cursor o enfocar la galería.
+- Botón para pausar/reanudar manualmente; respeta preferencia del sistema de movimiento reducido.
+- Conserva el contenido técnico y la tarjeta My Contribution en la parte inferior.
+
+IMPORTANTE
+- El cambio visual se aplicó al archivo de Carrier. Para homogeneizar CTC, Puzzlebot, Machine Vision y el resto del portafolio se necesitan sus archivos correspondientes.
+- No se ha podido comprobar el render final con el style.css de tu sitio dentro de este entorno. Revisa la apariencia visual final en el repositorio publicado.
